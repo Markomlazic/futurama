@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../img/fr-bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* intro-animation background from: https://codepen.io/theratslayer/pen/MEVdPG */
+.intro-animation {
+  width: 100%;
+  height: 20rem;
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(172deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(157deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(143deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(127deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(112deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(97deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(82deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(67deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(52deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(37deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(22deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(8deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab);
+  background-position: 0% 0%;
+  background-size: 100% 200%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.intro-animation:after {
+  width: 100%;
+  height: 20rem;
+  animation-name: burst;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(172deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(157deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(143deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(127deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(112deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(97deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(82deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(67deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(52deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(37deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(22deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff),
+    linear-gradient(8deg, rgba(0, 0, 0, 0) 50%, #1d7eab 50%, #1d7eab),
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, #4ae0ff 50%, #4ae0ff);
+  background-position: 50% -100%;
+  background-size: 200% 400%;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@keyframes burst {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.caption-container {
+  color: black;
+  font-size: 0.3rem;
+  font-family: MyWebFont;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1rem;
+}
+
+.badge h1 {
+  font-family: MyWebFont;
+  color: red;
+  -webkit-text-stroke: 1px yellow;
+  text-shadow: 3px 3px 0 yellow, -1px -1px 0 yellow, 1px -1px 0 yellow,
+    -1px 1px 0 yellow, 1px 1px 0 yellow;
+  font-size: 2rem;
+}
+
+.futurama_img {
+  width: 12rem;
+  margin-right: 5px;
+  border: 2px solid white;
+}
+
+.main-text {
+  margin-top: 1rem;
+}
+
+.all-caps {
+  text-transform: uppercase;
+  font-family: MyWebFont;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.table {
+  margin-right: 15px;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+.list-group-item {
+  padding: 0;
+}
+
+#chr-img {
+  max-height: 300px;
+}
+.links ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.links li a {
+  color: white;
+  transition: color 0.2s;
+}
+
+.links li a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+
+.about-company i {
+  font-size: 35px;
+}
+
+.about-company a {
+  color: white;
+  transition: color 0.2s;
+  font-family: MyWebFont;
+}
+
+.about-company a:hover {
+  color: #4180cb;
+}
+
+.location i {
+  font-size: 18px;
+}
+
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: MyWebFont;
+}
+
+@media (min-width: 766px) {
+  .badge h1 {
+    font-size: 4rem;
+  }
+}

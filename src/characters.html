@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, inital-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <title>Bootstrap Example</title>
+    <link rel="shortcut icon" href="../img/logo2.png" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header-container container-fluid bg-dark text-light mb-4">
+        <div class="intro-animation container-fluid navbar-dark bg-dark mb-3">
+          <div class="header-text-container container-fluid d-flex flex-column">
+            <div class="badge">
+              <h1 id="text-bend">FUTURAMA</h1>
+            </div>
+            <div class="caption-container">
+              <p id="title-caption">Loading...</p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a class="navbar-brand all-caps " href="../index.html">Futurama</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Episode Guide
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item  active" href="../src/season1.html"
+                    >Season 1</a
+                  >
+                  <a class="dropdown-item" href="../src/season2.html"
+                    >Season 2</a
+                  >
+                  <a class="dropdown-item" href="#">Season 3</a>
+                  <a class="dropdown-item" href="#">Season 4</a>
+                  <a class="dropdown-item" href="#">Season 5</a>
+                  <a class="dropdown-item" href="#">Season 6</a>
+                  <a class="dropdown-item" href="#">Season 7</a>
+                </div>
+              </li>
+              <li class="nav-item   active">
+                <a class="nav-link" href="./characters.html">Characters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quiz.html">Quiz</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container">
+        <ul class="character-list list-group list-group-horizontal flex-wrap">
+          <li id="0" value="0" onclick="changeCharacter(this.id)"  class="list-group-item flex-fill list-group-item-primary">
+            <button type="button" class="btn btn-link">Fry</button>
+          </li>
+          <li id="1" value="1" onclick="changeCharacter(this.id)" class="list-group-item flex-fill list-group-item-primary">
+            <button  type="button" class="btn btn-link" value="leela">
+              Leela
+            </button>
+          </li>
+          <li id="2" value="2" onclick="changeCharacter(this.id)" class="list-group-item flex-fill list-group-item-primary">
+            <button  type="button" class="btn btn-link" value="bender">
+              Bender
+            </button>
+          </li>
+          <li id="3" value="3" onclick="changeCharacter(this.id)" class="list-group-item flex-fill list-group-item-primary">
+            <button  type="button" class="btn btn-link" value="farnsworth">
+              Farnsworth
+            </button>
+          </li>
+          <li id="4" value="4" onclick="changeCharacter(this.id)" class="list-group-item flex-fill list-group-item-primary">
+            <button  type="button" class="btn btn-link" value="zoidberg">
+              Zoidberg
+            </button>
+          </li>
+          <li id="5" value="5" onclick="changeCharacter(this.id)" class="list-group-item flex-fill list-group-item-primary">
+            <button  type="button" class="btn btn-link" value="amy">Amy</button>
+          </li>
+          <li id="6" value="6" onclick="changeCharacter(this.id)" class="list-group-item flex-fill list-group-item-primary">
+            <button  type="button" class="btn btn-link" value="hermes">
+              Hermes
+            </button>
+          </li>
+        </ul>
+        <div class="display-character mt-1 d-flex flex-row">
+          <div class="character-bio">
+         
+          <div>              <h3 id="chr-name" class="list-item-name">Name: Filip J Fry</h4>
+            <h4 id="chr-age" class="list-item-age">Age: 25</h4>
+            <h4 id="chr-job" class="list-item-job">Occupation:  Delivery Boy</h4>
+            <img class="float-right" id="chr-img" src="../img/chr/0.png" alt="Character image" />
+            <div class="list-item-biography"></div>
+
+            <p id="chr-bio">
+              Philip J Fry was born in 1974. He suffered 3 heart attacks in high school after drinking 100 cans of Cola a week. After dropping out of Coney Island college he took three years off during which he continuously watched TV, knowing that someday it would help him save the world. He then got a job delivering pizzas for Panuccis Pizza during which, on December 31 1999, he got frozen while delivering a pizza to Applied Cryogenics. Leaving his two-timing girlfriend Michelle behind he woke up on December 31 2999. Professor Farnsworth is his great (x30) nephew. In the 20th century he had one brother called Yancy who missed Fry so much when he was frozen, presumed dead, that he named his son Philip to 'carry on the memory of his lost brother'. Currently, he lives with Bender in the Robot Arms Appartments and enjoys watching TV and drinking Slurm. Although he had affairs with Amy before, the woman he is really into is Leela who acknowledges his feelings but won't return them.
+            </p></div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer container-fluid mt-3 bg-dark text-light">
+        <div class="pt-5 pb-1 footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 about-company">
+                <h2>Futurama Fan Page</h2>
+                <p class="pr-5 text-white-50">No1 Futurama Resource Page</p>
+                <p>
+                  <a href="#"><i class="fa fa-facebook-square mr-2"></i></a
+                  ><a href="#"><i class="fa fa-linkedin-square"></i></a>
+                </p>
+              </div>
+              <div class="col-md-3 col-sm-12 links">
+                <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="m-0 p-0">
+                  <li>- <a href="#">Watch Futurama on Amazon Video</a></li>
+                  <li>- <a href="#">Nam mauris velit</a></li>
+                  <li>- <a href="#">Etiam vitae mauris</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-12 location">
+                <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                <p>22, Futurama Street, 3000 New New York</p>
+                <p class="mb-0">
+                  <i class="fa fa-phone mr-3"></i>(541) 754-3010-667
+                </p>
+                <i class="fa fa-envelope-o mr-3"></i>
+                <a
+                  href="mailto: info@futuramafans.com?subject=Welcome to the World of Tommorow"
+                  >info@futuramafans.com</a
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col copyright">
+                <p class="">
+                  <small class="text-white-50"
+                    >© 2020. All Rights Reserved.</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery.lettering-0.6.min.js"></script>
+    <script src="../js/circletype.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/characters.js"></script>
+  </body>
+</html>

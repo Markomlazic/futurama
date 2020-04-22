@@ -1,0 +1,51 @@
+/* Quiz CSS */
+
+.game-container {
+  width: 100%;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-text {
+  width: 80%;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 90%;
+  height: 3rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 2.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
