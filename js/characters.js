@@ -13,7 +13,7 @@ const FuturamaData = {
     job: "Ship's Captain",
     bio:
       "Leela is the only person from her species that lives on earth. She was brought up in an orphanage and attended high school where she was a bit of an outcast for having oneeye and went dateless to her prom. She took up kick boxing and other similar sports to make up for the lack of friends. Whether she attended college is unknown. She later got a job as a fate assignment officer and after a while met Fry while she was assigning a career to him. He convinced her to quit and she was then offered a job, along with Fry and Bender, on the Planet Express delivery crew where she impressed Professor Farnsworth enough for him to make her captain. She still has problems with men and often gets jealous of Amy's popularity among the opposite sex. She has a soft spot for Fry but is unsure of anything further than that, due to Fry's clumsy advances.",
-    img: "../img/chr/1.webp"
+    img: "../img/chr/1.png"
   },
   2: {
     name: "Bender Bending Rodriquez",
